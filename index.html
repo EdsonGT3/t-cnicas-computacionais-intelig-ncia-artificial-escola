@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Você decide o futuro da IA</title>
+</head>
+<body>
+    <div class="caixa-principal">
+        <section class="tela-nome" aria-labelledby="titulo-cadastro">
+            <h2 id="titulo-cadastro">Antes de começar</h2>
+            <p>Digite seu nome para continuar.</p>
+            <form class="formulario-nome">
+                <label for="nome-usuario">Seu nome</label>
+                <input id="nome-usuario" name="nome" type="text" autocomplete="name" maxlength="60" required>
+                <button class="botao-entrar" type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <div class="conteudo-principal" hidden>
+            <h1 class="titulo-usuario">Você decide o futuro da IA</h1>
+            <div class="caixa-perguntas" aria-live="polite"></div>
+            <div class="caixa-alternativas" aria-live="polite"></div>
+            <div class="caixa-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </div>
+
+        <section class="tela-jogo" aria-labelledby="titulo-jogo" hidden>
+            <header class="cabecalho-jogo">
+                <h2 id="titulo-jogo">Jogo da memória</h2>
+                <p class="status-jogo">Nível <span id="nivel-jogo">1</span> de 1</p>
+            </header>
+            <div class="grade-cartao" id="grade-cartao" aria-live="polite"></div>
+            <p class="mensagem-jogo" id="mensagem-jogo" aria-live="assertive"></p>
+            <button class="botao-reiniciar-jogo" type="button">Recomeçar nível</button>
+        </section>
+    </div>
+    <script src="memory-game.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
