@@ -1,1 +1,1 @@
-# t-cnicas-computacionais-intelig-ncia-artificial-escola
+# tecnicas-computacionais-inteligencia-artificial-escola
